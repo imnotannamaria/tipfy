@@ -44,7 +44,7 @@ export function Footer() {
 
       <Button variant="link" className="flex gap-2">
         <Link
-          href="https://github.com/imnotannamaria"
+          href="https://github.com/imnotannamaria/tipfy"
           className="flex gap-2 justify-between"
           target="_blank"
         >

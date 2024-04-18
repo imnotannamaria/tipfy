@@ -20,7 +20,7 @@ import {
   PaginationItem,
   PaginationLink,
 } from './ui/pagination'
-import { SomethingWentWrong } from './Error'
+import { SomethingWentWrong } from './SomethingWentWrong'
 import { ScrollArea } from './ui/scroll-area'
 
 export default async function Indications() {

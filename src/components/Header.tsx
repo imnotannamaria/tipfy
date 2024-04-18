@@ -6,6 +6,7 @@ export function Header() {
   return (
     <header className="flex justify-between p-4">
       <Logo />
+
       <div className="flex gap-2">
         <Button>
           <Link href="/indications">Indicações</Link>

@@ -1,13 +1,15 @@
-export const listAllIndicationsQuery = `{
-  indications {
-    id
-    link
-    name
-    track
-    artist
-    cover
-  }
-}`
+export function ListIndicationsQuery(amoutOfIndication: number) {
+  return `{
+    indications(orderBy: publishedAt_DESC, first:${amoutOfIndication}) {
+      id
+      link
+      name
+      track
+      artist
+      cover
+    }
+  }`
+}
 
 export const createIndicationMutation = `
 mutation MyMutation($data: IndicationCreateInput!) {

@@ -16,7 +16,7 @@ export function EmptyMusicCard() {
       <CardContent className="flex flex-col gap-4">
         <CardTitle>Me indique uma música</CardTitle>
         <CardDescription>
-          Preencha seu nome, nome da música e logo abaixo será retornada as
+          Preencha seu nome, nome da música e logo acima será retornada as
           informações da faixa.
         </CardDescription>
       </CardContent>

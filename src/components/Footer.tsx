@@ -30,7 +30,7 @@ export function Footer() {
             <div className="space-y-1">
               <Button variant="link">
                 <Link
-                  href="https://anna-maria-portfolio.vercel.app/skills"
+                  href="https://anna-maria-portfolio.vercel.app"
                   target="_blank"
                   className="text-green-500 font-medium flex gap-2 items-center"
                 >

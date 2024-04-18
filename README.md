@@ -1,15 +1,16 @@
 # Tipfy
 
-Um site onde você pode indicar músicas e ver músicas que foram indicadas.
+A website where you can recommend songs and see recommended songs.
 
 
-## Stack utilizada
+## Stack used
 
 **Front-end:** React, Nextjs, TailwindCSS, GraphQl, Hygraph
 
-## Instalação
 
-Instale my-project com npm
+## Installation
+
+Install my-project with npm
 
 ```bash
   git clone
@@ -18,16 +19,16 @@ Instale my-project com npm
   npm run start
 ```
     
-## Funcionalidades
+## Features
 
-- Indicar músicas do Spotify
-- Ver indicações públicas
+- Recommend songs from Spotify
+- View public recommendations
 
 
 
-## Variáveis de Ambiente
+## Environment Variables
 
-Para rodar esse projeto, você vai precisar adicionar as seguintes variáveis de ambiente no seu .env
+To run this project, you will need to add the following environment variables to your .env
 
 `NEXT_PUBLIC_HYGRAPH_API`
 

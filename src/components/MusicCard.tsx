@@ -127,10 +127,8 @@ export function MusicCard({
           </AspectRatio>
         </div>
 
-        <Link href={trackLink} target="_blank">
-          <Button className="text-green-500" variant="link">
-            Ouvir no Spotify
-          </Button>
+        <Link href={trackLink} target="_blank text-green-500">
+          <Button variant="link">Ouvir no Spotify</Button>
         </Link>
       </CardContent>
       <CardFooter>

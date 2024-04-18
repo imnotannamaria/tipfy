@@ -9,9 +9,7 @@ import { IndicationWithId } from '@/graphql/interfaces/Indication'
 import {
   Table,
   TableBody,
-  TableCaption,
   TableCell,
-  TableFooter,
   TableHead,
   TableHeader,
   TableRow,
@@ -22,7 +20,8 @@ import {
   PaginationItem,
   PaginationLink,
 } from './ui/pagination'
-import { SomethingWentWrong } from './error'
+import { SomethingWentWrong } from './Error'
+import { ScrollArea } from './ui/scroll-area'
 
 export default async function Indications() {
   const [indications, setIndications] = useState<IndicationWithId[]>([])
@@ -51,9 +50,9 @@ export default async function Indications() {
   const currentPageIndications = indications.slice(startIndex, endIndex)
 
   return (
-    <section className="flex flex-col gap-4 p-4">
+    <section className="flex flex-col items-center justify-center h-full w-full">
       {error && <SomethingWentWrong />}
-      <div>
+      <ScrollArea className="w-full h-[500px] rounded-md">
         {indications.length > 0 && (
           <Table>
             <TableHeader>
@@ -93,7 +92,7 @@ export default async function Indications() {
             </TableBody>
           </Table>
         )}
-      </div>
+      </ScrollArea>
 
       <Pagination>
         <PaginationContent>

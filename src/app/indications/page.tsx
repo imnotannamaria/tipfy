@@ -1,5 +1,9 @@
 import Indications from '@/components/Indications'
 
 export default async function IndicationsPage() {
-  return <Indications />
+  return (
+    <div className="h-screen w-[60%] m-auto">
+      <Indications />
+    </div>
+  )
 }

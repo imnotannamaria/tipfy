@@ -4,11 +4,11 @@ import Link from 'next/link'
 
 export function Footer() {
   return (
-    <div className="p-2 flex justify-between">
+    <div className="bg-zinc-950 h-[10%] p-2 flex justify-between mt-36 lg:mt-0">
       <Button variant="link" className="flex gap-2">
         <Link
           href="https://anna-maria-portfolio.vercel.app"
-          className="text-xs flex gap-2 justify-between"
+          className="flex gap-2 justify-between"
           target="_blank"
         >
           Desenvolvido por @imnotannamaria
@@ -18,7 +18,7 @@ export function Footer() {
       <Button variant="link" className="flex gap-2">
         <Link
           href="https://github.com/imnotannamaria/tipfy"
-          className="text-xs flex gap-2 justify-between"
+          className="flex gap-2 justify-between"
           target="_blank"
         >
           Projeto no Github

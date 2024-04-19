@@ -113,7 +113,7 @@ export default function Home() {
   }
 
   return (
-    <section className="flex h-full w-full items-center justify-center flex-col lg:flex-row gap-8 p-4">
+    <section className="bg-zinc-950 flex h-[80%] flex-1 w-full items-center justify-center flex-col lg:flex-row gap-8 p-4">
       {/* LEFT */}
       <div className="w-full lg:w-3/4 h-full flex justify-center items-center bg-red-">
         <Form {...form}>

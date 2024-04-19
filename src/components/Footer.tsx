@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export function Footer() {
   return (
-    <div className="bg-zinc-950 h-[10%] p-2 flex justify-between mt-36 lg:mt-0">
+    <div className="bg-zinc-950 p-2 flex justify-between items-center mt-36 lg:mt-0">
       <Button variant="link" className="flex gap-2">
         <Link
           href="https://anna-maria-portfolio.vercel.app"

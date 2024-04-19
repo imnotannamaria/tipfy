@@ -25,7 +25,7 @@ export default function RootLayout({
       </head>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
-          <main className="flex flex-col h-screen bg-zinc-950">
+          <main className="flex flex-col bg-zinc-950">
             <Header />
             {children}
             <Footer />

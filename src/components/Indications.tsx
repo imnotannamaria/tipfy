@@ -21,7 +21,7 @@ import {
   PaginationLink,
 } from './ui/pagination'
 import { SomethingWentWrong } from './SomethingWentWrong'
-import { ScrollArea } from './ui/scroll-area'
+import { ScrollArea, ScrollBar } from './ui/scroll-area'
 
 export default async function Indications() {
   const [indications, setIndications] = useState<IndicationWithId[]>([])
@@ -50,7 +50,7 @@ export default async function Indications() {
   const currentPageIndications = indications.slice(startIndex, endIndex)
 
   return (
-    <section className="flex flex-col items-center justify-center h-full w-full">
+    <section className="flex flex-col items-center justify-center gap-2 h-full w-full">
       {error && <SomethingWentWrong />}
       <ScrollArea className="w-full h-[500px] rounded-md">
         {indications.length > 0 && (
@@ -91,7 +91,8 @@ export default async function Indications() {
               ))}
             </TableBody>
           </Table>
-        )}
+        )}{' '}
+        <ScrollBar orientation="horizontal" />
       </ScrollArea>
 
       <Pagination>
